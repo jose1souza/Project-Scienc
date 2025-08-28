@@ -1,3 +1,18 @@
+header{
+  background-color: rgb(92, 92, 92);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.img-scienc{
+  width: 50%;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
+}
+
+/* carregamento*/
 .spinner {
   width: 100px;
   height: 100px;
