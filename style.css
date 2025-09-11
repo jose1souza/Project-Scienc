@@ -64,3 +64,44 @@ header{
     border-width: 1px;
   }
 }
+
+/*
+*{
+    margin: auto 0;
+    padding: auto 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: antiquewhite ;
+    border-bottom: 2px solid black;
+}
+
+.container-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#imagemLogo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+nav ul{
+    gap: 10px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+*/
