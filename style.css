@@ -1,26 +1,90 @@
+:root {
+  --blue: #1e3a8a;
+  --light--blue: #3b4ea3;
+  --red: #e30613;
+  --green: #00b140;
+  --gray: #333333;
+  --black: black;
+  --white: #f5f5f5;
+  --yellow: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-bottom: 2px solid black;
+  background-color: var(--white);
+  color: var(--gray);
+  border-bottom: 2px solid var(--blue);
 }
 
-nav ul li a:focus {
-  outline: 2px solid var(--azul);
+main {
+  background-color: var(--white);
+  padding: 40px 20px;
 }
 
-.container-logo {
+.banner {
+  background-image: url("img/background-Science.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
   display: flex;
-  gap: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
-#imagemLogo {
-  height: auto;
-  background-color: rgb(255, 255, 255);;
+.banner .overlay{
+  background-color: var(--white);
+  color: var(--white);
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.objectives ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.objectives li {
+  margin-bottom: 10px;
+  color: #3b4ea3;
+  font-weight: 500;
+}
+
+.schools li{
+  margin-bottom: 10px;
+  color: #3b4ea3;
+  font-weight: 500;
 }
 
 nav ul {
@@ -30,17 +94,56 @@ nav ul {
 }
 
 nav ul li a {
-  color: black;
+  color: var(--blue);
   font-size: 20px;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.img-scienc {
+.container-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#logotype-image {
+  width: 80px;
+  height: auto;
+}
+
+.logotype-image {
   width: 50%;
   display: flex;
   align-content: center;
   padding: 10px 20px;
 }
+
+footer {
+  background-color: var(--light--blue);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--red);
+}
+
 
 /* carregamento*/
 .spinner {
@@ -95,8 +198,4 @@ nav ul li a {
   }
 }
 
-* {
-  margin: auto 0;
-  padding: auto 0;
-  box-sizing: border-box;
-}
+
