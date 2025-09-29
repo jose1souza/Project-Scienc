@@ -10,8 +10,9 @@
 }
 
 * {
-  margin: 0.%;
+  margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
@@ -30,27 +31,8 @@ main {
   padding: 40px 20px;
 }
 
-.banner {
-  background-image: url("img/background-Science.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner .overlay{
-  background-color: var(--white);
-  color: var(--white);
-  padding: 20px 40px;
-  border-radius: 8px;
-}
-
 article {
-  max-width: 900px;
+  max-width: 75%;
   margin: 0 auto;
   background-color: var(--white);
   padding: 30px;
@@ -70,52 +52,22 @@ p {
   margin-bottom: 20px;
 }
 
-.objectives ul {
-  padding-left: 20px;
-  margin-top: 10px;
+a{
+  text-decoration: none;
 }
 
-.objectives li {
-  margin-bottom: 10px;
-  color: #3b4ea3;
-  font-weight: 500;
-}
-
-.schools li{
-  margin-bottom: 10px;
-  color: #3b4ea3;
-  font-weight: 500;
+ul{
+    list-style: none;
 }
 
 nav ul {
   gap: 10px;
-  list-style: none;
   display: flex;
 }
 
 nav ul li a {
   color: var(--blue);
   font-size: 20px;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.container-logo {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-#logotype-image {
-  width: 80px;
-  height: auto;
-}
-
-.logotype-image {
-  width: 50%;
-  display: flex;
-  align-content: center;
-  padding: 10px 20px;
 }
 
 footer {
@@ -127,7 +79,6 @@ footer {
 }
 
 footer ul {
-  list-style: none;
   padding: 0;
 }
 
@@ -137,35 +88,10 @@ footer li {
 
 footer a {
   color: var(--white);
-  text-decoration: none;
 }
 
 footer a:hover {
   color: var(--red);
-}
-
-
-/* carregamento*/
-.spinner {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-
-.spinner div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 10px solid transparent;
-  border-top-color: #2742f4;
-  border-radius: 50%;
-  animation: spinnerOne 1.2s linear infinite;
-}
-
-.spinner div:nth-child(2) {
-  border: 10px solid transparent;
-  border-bottom-color: #e30613;
-  animation: spinnerTwo 1.2s linear infinite;
 }
 
 @keyframes spinnerOne {
