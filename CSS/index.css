@@ -34,25 +34,6 @@
   font-weight: 500;
 }
 
-.container-logo {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-#logotype-image {
-  width: 80px;
-  height: auto;
-}
-
-.logotype-image {
-  width: 50%;
-  display: flex;
-  align-content: center;
-  padding: 10px 20px;
-}
-
-
 .schools {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
