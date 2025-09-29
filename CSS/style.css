@@ -27,13 +27,13 @@ header {
 }
 
 main {
-  background-color: var(--white);
   padding: 40px 20px;
+  max-width: 75%;
+  margin: 0 auto;
+
 }
 
 article {
-  max-width: 75%;
-  margin: 0 auto;
   background-color: var(--white);
   padding: 30px;
   border-radius: 8px;
@@ -123,5 +123,3 @@ footer a:hover {
     border-width: 1px;
   }
 }
-
-
