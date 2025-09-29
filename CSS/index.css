@@ -1,16 +1,33 @@
 .banner {
-  background-image: url("img/background-Science.jpeg");
+  width: 100%;
+  height: 400px;
+  background-image: url("https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2024/07/chamada-publica-do-mais-ciencia-na-escola-estende-prazo-ate-20-de-agosto/53838817673_6ee42334a7_c.jpg/@@images/fd55d6b3-8e3b-471e-b57e-3234234472e5.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid var(--blue);
 }
 
-.banner .overlay{
+.banner-overlay {
+  background-color: var(black);
+  color: var(--white);
+  padding: 20px 40px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#banner-img {
+  max-width: 100%;
+  max-height: 400%;
+  object-fit: contain;
+}
+
+.overlay{
   background-color: var(--white);
   color: var(--white);
   padding: 20px 40px;
