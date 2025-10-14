@@ -1,12 +1,10 @@
 :root {
   --blue: #1e3a8a;
-  --light--blue: #3b4ea3;
+  --light-blue: #3b4ea3;
   --red: #e30613;
-  --green: #00b140;
   --gray: #333333;
   --black: black;
   --white: #f5f5f5;
-  --yellow: #ffc107;
 }
 
 * {
@@ -16,53 +14,46 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+body {
   background-color: var(--white);
   color: var(--gray);
-  border-bottom: 2px solid var(--blue);
 }
 
 main {
+  margin-top: 100px;
+  /* altura do nav fixo */
   padding: 40px 20px;
   max-width: 75%;
-  margin: 0 auto;
-
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
 }
 
-article {
-  background-color: var(--white);
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--black);
   margin-bottom: 10px;
 }
 
 p {
-  color: var(--gray);
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
+/* Navegação */
 nav ul {
-  gap: 10px;
   display: flex;
+  gap: 10px;
 }
 
 nav ul li a {
@@ -70,38 +61,13 @@ nav ul li a {
   font-size: 20px;
 }
 
-.container-logo {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-#logotype-image {
-  width: 80px;
-  height: auto;
-}
-
-.logotype-image {
-  width: 50%;
-  display: flex;
-  align-content: center;
-  padding: 10px 20px;
-}
-
+/* Rodapé */
 footer {
-  background-color: var(--light--blue);
+  background-color: var(--light-blue);
   color: var(--white);
   padding: 20px;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  margin-bottom: 5px;
 }
 
 footer a {
@@ -110,34 +76,4 @@ footer a {
 
 footer a:hover {
   color: var(--red);
-}
-
-@keyframes spinnerOne {
-  0% {
-    transform: rotate(0deg);
-    border-width: 10px;
-  }
-  50% {
-    transform: rotate(180deg);
-    border-width: 1px;
-  }
-  100% {
-    transform: rotate(360deg);
-    border-width: 10px;
-  }
-}
-
-@keyframes spinnerTwo {
-  0% {
-    transform: rotate(0deg);
-    border-width: 1px;
-  }
-  50% {
-    transform: rotate(180deg);
-    border-width: 10px;
-  }
-  100% {
-    transform: rotate(360deg);
-    border-width: 1px;
-  }
 }

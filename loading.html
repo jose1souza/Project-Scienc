@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carregando…</title>
+  <link rel="stylesheet" href="CSS/spinner.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .loading-text {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #2742f4;
+      font-weight: bold;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner">
+    <div></div>
+    <div></div>
+  </div>
+  <p class="loading-text">Carregando…</p>
+
+  <script src="JS/loading.js"></script>
+
+</body>
+</html>
