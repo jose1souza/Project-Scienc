@@ -188,20 +188,27 @@ article {
 }
 
 /* seção de objetivos */
-.objectives li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--gray);
+.objectives .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  border-left: 6px solid var(--light-blue);
 }
 
-.objectives li::before {
-  content: "✅";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 18px;
-  color: var(--light-blue);
+.objectives .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.objectives .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.objectives .card-text {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.6;
 }
