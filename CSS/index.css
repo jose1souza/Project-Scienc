@@ -71,6 +71,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(0.7); 
 }
 
 /* conteúdo centralizado sobre a imagem */
@@ -81,6 +82,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
+  
   padding-top: 120px;
   position: relative;
   z-index: 1;
