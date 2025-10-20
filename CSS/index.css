@@ -98,11 +98,11 @@ article {
 }
 
 .about-project {
-  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
-  border-left: 6px solid var(--blue);
-  border-radius: 10px;
+  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
   padding: 40px 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .about-project h2 {
@@ -113,8 +113,30 @@ article {
 
 .about-project p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.schools-intro {
+  margin-top: 20px; /* espaçamento entre seções */
+  margin-bottom: 30px;
+}
+
+.schools-intro h2 {
+  font-size: 28px;
+  color: var(--blue);
+}
+
+.schools-intro p {
+  margin-top: 10px;
+  font-size: 15px;
   color: var(--gray);
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: -60px;
 }
 
 .school {
