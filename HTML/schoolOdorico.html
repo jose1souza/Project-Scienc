@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Gabriel Odorico</title>
+    <link rel="stylesheet" href="../CSS/schools.css">
+    <title>Escola Estadual Gabriel Odorico</title>
 </head>
 <body>
-    <header>
-        <div class="container-logo">
-            <img src="../img/science-Logotype.png" alt="Project logo +Science in Schools" id="logotype-image">
-            <h1 class="titleLogo">Projeto +Ciência nas Escolas</h1>
-        </div>
-        <nav aria-label="Main menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="HTML/schools.html">Escolas</a></li>
-                <li><a href="HTML/equips.html">Equipamentos</a></li>
-                <li><a href="HTML/notices.html">Noticias</a></li>
+        <header>
+        <nav class="nav-top">
+            <div class="d-flex align-items-center gap-3">
+            <img src="../img/science-Logotype.png" alt="Logo do projeto" id="logotype-image" class="img-fluid"
+                style="width: 80px;">
+            <h1 class="titleLogo fs-2 fw-bold m-0">Escola Estadual Gabriel Odorico</h1>
+            </div>
+            <ul class="nav justify-content-end gap-3">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../loading.html?next=index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="loading.html?next=HTML/equips.html">Equipamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="loading.html?next=HTML/feedback.html">Treinamento</a>
+            </li>
             </ul>
-        </nav> 
+        </nav>
     </header>
-    <main>
-        <h2>Localização da Escola</h2>        
+    <main class="main-school">
+        <section class="news-post">
+            <h1 class="center">Noticias</h1>
+            <article class="post">
+                <img src="../img/+ciencia1.png" alt="Imagem da escola" class="post-image">
+                <div class="post-content">
+                    <h3 class="post-title">titulo da noticia super legal</h3>
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, placeat dolor quae tempore nesciunt, vero voluptas quas ut sed modi, eveniet qui. Nihil, expedita nobis officiis quae pariatur saepe velit.
+                    </p>
+                </div>
+            </article>
+            <br>
+            <article class="post">
+                <img src="../img/+ciencia1.png" alt="Imagem da escola" class="post-image">
+                <div class="post-content">
+                    <h3 class="post-title">titulo da outra noticia super legal</h3>
+                    <p class="post-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi excepturi eius fugiat consectetur officiis. Ea, eveniet repellendus? Deleniti nesciunt officiis recusandae, reiciendis modi distinctio vero fuga quasi temporibus porro architecto.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="map-control">
+            <h2 class="center">Localização da Escola</h2>  
+            <div class="map">       
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.558812721248!2d-45.9255540255772!3d-21.681013280136526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca1498a031d7ad%3A0xd37fb0ccadf5fbf4!2sEscola%20Estadual%20Gabriel%20Odorico!5e0!3m2!1spt-BR!2sbr!4v1759166782739!5m2!1spt-BR!2sbr" 
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+        </section>
     </main>
     <footer>
         <nav>

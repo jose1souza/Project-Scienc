@@ -118,6 +118,15 @@ article {
   margin-bottom: 1rem;
 }
 
+.schools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;              
+  max-width: 800px;
+  margin: auto;
+}
+
 .schools-intro {
   margin-top: 20px; /* espaçamento entre seções */
   margin-bottom: 30px;
@@ -140,11 +149,12 @@ article {
 }
 
 .school {
+  width: 350px;   
+  height: 350px;
   background-color: white;
   color: var(--gray);
   padding: 20px;
   margin: 0 auto;
-  max-width: 600px;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -156,7 +166,8 @@ article {
 }
 
 .school:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
+  box-shadow: 1px 2px 7px black;
 }
 
 .school p {
@@ -167,8 +178,8 @@ article {
 }
 
 .img-schools {
-  width: 100%;
-  max-width: 220px;
+  width: 85%;
+  height: 85%;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
