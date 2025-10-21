@@ -48,14 +48,6 @@
   transform: scale(1.05);
 }
 
-.titleLogo {
-  color: var(--white);
-  font-size: 22px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  margin: 0;
-}
-
 /* imagem de fundo */
 .image-background {
   position: absolute;
