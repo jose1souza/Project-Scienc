@@ -97,17 +97,43 @@ article {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.about-project h2 {
-  color: var(--blue);
-  font-size: 28px;
-  margin-bottom: 20px;
+.objective-card {
+  border-radius: 12px;
+  border-left: 6px solid var(--light-blue);
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-project p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 1rem;
+.objective-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.objective-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.objective-card .card-text {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.objective-card ul {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.objective-card ul li {
+  font-size: 15px;
+  color: var(--gray);
 }
 
 .schools{
