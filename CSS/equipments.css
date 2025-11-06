@@ -5,7 +5,7 @@
   width: 100%;
   margin-bottom: 200px;
   z-index: 1000;
-  background-color: #78c9e4;
+  background-color: #ADD8E6;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,7 @@
   transform: scale(1.05);
 }
 
-.main-school{
+.main-equipment{
     margin-top: 120px;
     margin-bottom: 15px;
     border: 2px solid var(--blue);
@@ -47,14 +47,14 @@
     text-align: center;
 }
 
-.news-post {
+.equipment-info {
     background: rgb(214, 237, 245);
     margin: 20px 0;
     padding: 20px;
     box-shadow: 1px 1px 10px rgb(211, 210, 210);
 }
 
-.post {
+.equipment {
     background: linear-gradient(to right, #eaf6ff, #f0f8ff);
     display: flex;
     gap: 20px;
@@ -63,40 +63,27 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.post-image {
+.equipment-image {
     width: 300px;
     height: auto;
     object-fit: cover;
 }
 
-.post-content {
+.equipment-content {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.post-title {
+.equipment-title {
     margin: 0 0 10px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
 }
 
-.post-text {
+.equipment-text {
     font-size: 1rem;
     color: #555;
-}
-
-.map {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.map-control{
-    margin-top: 30px;
-    padding: 20px;
-    background: rgb(214, 237, 245);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
