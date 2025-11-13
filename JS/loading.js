@@ -1,6 +1,5 @@
 console.log("Loading script iniciado");
 
-// Pega o destino da URL
 const params = new URLSearchParams(window.location.search);
 const target = params.get("next");
 
