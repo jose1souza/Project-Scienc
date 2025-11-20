@@ -1,102 +1,190 @@
+:root {
+  --blue: #1e3a8a;
+  --light-blue: #3b4ea3;
+  --red: #e30613;
+  --gray: #333333;
+  --black: #000000;
+  --white: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--gray);
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #78c9e4;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-top .nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+}
+
+.nav-top .nav-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.nav-top img {
+  max-width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-top img:hover {
+  transform: scale(1.05);
+}
+
 .main-school {
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin-top: 120px;
+  margin-bottom: 15px;
   border: 2px solid var(--blue);
   border-radius: 8px;
   padding: 20px;
-  background-color: var(--white);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .center {
   text-align: center;
 }
 
-.news-post {
-  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+.activities-grid,
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.post {
-  background: var(--white);
+.activity,
+.post,
+.equipment {
+  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.post:hover {
-  transform: scale(1.02);
-}
-
-.post-image {
+/* Imagens */
+.activity-image,
+.post-image,
+.equipment-image {
   width: 300px;
   max-width: 100%;
-  border-radius: 8px;
+  height: auto;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-.post-content {
-  flex: 1;
+/* Conteúdo */
+.activity-content,
+.post-content,
+.equipment-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.post-title {
+/* Títulos */
+.activity-title,
+.post-title,
+.equipment-title {
   margin: 0 0 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: var(--blue);
+  color: #333;
 }
 
-.post-text {
+/* Texto */
+.activity-text,
+.post-text,
+.equipment-text {
   font-size: 1rem;
-  color: var(--gray);
+  color: #555;
   line-height: 1.6;
 }
 
-.map {
-  display: flex;
-  justify-content: center;
+/* Notícias container */
+.news-post {
+  background: rgb(214, 237, 245);
   margin: 20px 0;
+  padding: 20px;
+  box-shadow: 1px 1px 10px rgb(211, 210, 210);
+  border-radius: 8px;
 }
 
+/* Mapa */
 .map-control {
   margin-top: 30px;
   padding: 20px;
-  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
-  border-radius: 8px;
+  background: rgb(214, 237, 245);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.titleLogo {
+/* Footer */
+.footer {
+  background-color: var(--blue);
   color: var(--white);
-  font-weight: bold;
-  font-size: 1.6rem;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--white);
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .post {
+  .activity,
+  .post,
+  .equipment {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .post-image {
+  .activity-image,
+  .post-image,
+  .equipment-image {
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    margin: 0 auto 15px;
   }
 
-  .main-school {
-    margin-top: 100px;
-    padding: 15px;
+  main {
+    padding: 20px;
+    max-width: 95%;
   }
 }

@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escola Estadual Rubens Garcia | +Ciência nas Escolas</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/schools.css" />
-    <link rel="stylesheet" href="../CSS/navAndFooter.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola Estadual Rubens Garcia | +Ciência nas Escolas</title>
+  <link rel="stylesheet" href="../CSS/schools.css"/>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/navAndFooter.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
-
 <body>
-    <header>
-        <nav class="nav-top">
-            <div class="d-flex">
-                <img src="../img/science-Logotype.png" alt="Logo do projeto" class="logo" />
-                <h1 class="titleLogo">Escola Estadual Rubens Garcia</h1>
-            </div>
-            <ul class="nav gap-3">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html#escolas">Escolas</a></li>
-                <li class="nav-item"><a class="nav-link" href="../HTML/equips.html">Equipamentos</a></li>
-                <li class="nav-item"><a class="nav-link" href="../HTML/training.html">Treinamento</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="nav-top">
+    <div class="d-flex align-items-center gap-3">
+      <img src="../img/science-Logotype.png" alt="Logo do projeto" id="logotype-image" class="img-fluid"
+        style="width: 80px;">
+    </div>
+    <ul class="nav justify-content-end gap-3">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="../loading.html?next=index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="../loading.html?next=index.html%23escolas">Escolas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="../loading.html?next=HTML/equipments.html">Equipamentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="../loading.html?next=HTML/training.html">Treinamento</a>
+      </li>
+    </ul>
+  </nav>
+  </header>
 
-    <main class="main-school container py-5">
-        <section class="news-post">
-            <h2 class="center">Notícias</h2>
-            <div class="news-grid">
-                <article class="post">
-                    <img src="../img/+ciencia1.png" alt="Imagem da escola" class="post-image" />
-                    <div class="post-content">
-                        <h3 class="post-title">Título da notícia super legal</h3>
-                        <p class="post-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, placeat dolor quae
-                            tempore nesciunt, vero voluptas quas ut sed modi, eveniet qui. Nihil, expedita nobis
-                            officiis quae pariatur saepe velit.
-                        </p>
-                    </div>
-                </article>
-                <article class="post">
-                    <img src="../img/+ciencia1.png" alt="Imagem da escola" class="post-image" />
-                    <div class="post-content">
-                        <h3 class="post-title">Título da outra notícia super legal</h3>
-                        <p class="post-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi excepturi eius fugiat
-                            consectetur officiis. Ea, eveniet repellendus? Deleniti nesciunt officiis recusandae,
-                            reiciendis modi distinctio vero fuga quasi temporibus porro architecto.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
+  <main class="main-school container py-5">
+    <!-- Atividades vindas do Prismic -->
+    <section class="activities">
+      <h2 class="center">Atividades</h2>
+      <div id="activities-grid" class="activities-grid"></div>
+    </section>
 
-        <section class="map-control">
-            <h2 class="center">Localização da Escola</h2>
-            <div class="map-grid">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.4624427484773!2d-45.93163992557698!3d-21.6847589801339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca149a48594115%3A0x532d592479005b05!2sEscola%20Estadual%20Rubens%20Garcia!5e0!3m2!1spt-BR!2sbr!4v1759167807627!5m2!1spt-BR!2sbr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </main>
+    <!-- Mapa fixo -->
+    <section class="map-control">
+      <h2 class="center">Localização da Escola</h2>
+      <div class="map-grid">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.4624427484773!2d-45.93163992557698!3d-21.6847589801339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca149a48594115%3A0x532d592479005b05!2sEscola%20Estadual%20Rubens%20Garcia!5e0!3m2!1spt-BR!2sbr!4v1759167807627!5m2!1spt-BR!2sbr"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-        <div class="container text-center py-4">
-            <div class="footer-grid">
-                <div>
-                    <p class="fw-bold">José Carlos</p>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/in/jos%C3%A9-carlos-souza-5b9b7b2b1/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/jose1souza" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div>
-                    <p class="fw-bold">Lucas Silva</p>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/in/lucas-silva-da-rosa-17997721a" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/lucasa17" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <small>© 2025 Desenvolvido por José Carlos Souza e Lucas Silva da Rosa.</small>
+  <footer class="footer">
+    <div class="container text-center py-4">
+      <div class="footer-grid">
+        <div>
+          <p class="fw-bold">José Carlos</p>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/jos%C3%A9-carlos-souza-5b9b7b2b1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/jose1souza" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-    </footer>
-</body>
+        <div>
+          <p class="fw-bold">Lucas Silva</p>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/lucas-silva-da-rosa-17997721a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/lucasa17" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <small>© 2025 Desenvolvido por José Carlos Souza e Lucas Silva da Rosa.</small>
+    </div>
+  </footer>
 
+  <!-- Importa o JS do Prismic -->
+  <script type="module" src="/prismic.js"></script>
+</body>
 </html>
