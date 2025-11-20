@@ -28,6 +28,14 @@ main {
   margin-right: auto;
 }
 
+.titleLogo {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1;
+}
+
 h1,
 h2,
 h3 {
@@ -49,10 +57,9 @@ ul {
   list-style: none;
 }
 
-/* Navegação */
 nav ul {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
 nav ul li a {
@@ -61,7 +68,7 @@ nav ul li a {
 }
 
 .footer {
-  background-color: var(--blue); /* usa o azul principal do site */
+  background-color: var(--blue); 
   color: var(--white);
   padding-top: 40px;
   padding-bottom: 20px;

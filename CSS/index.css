@@ -1,4 +1,3 @@
-/* topo da página com imagem de fundo */
 #pagetop {
   position: relative;
   height: 100vh;
@@ -21,7 +20,7 @@
 }
 
 .nav-top.scrolled {
-  background-color: #78c9e4;
+  background-color: #1E90FF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +47,6 @@
   transform: scale(1.05);
 }
 
-/* imagem de fundo */
 .image-background {
   position: absolute;
   top: 0;
@@ -63,10 +61,9 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(0.7); 
+  filter: brightness(0.7);
 }
 
-/* conteúdo centralizado sobre a imagem */
 .header-overlay {
   display: flex;
   flex-direction: column;
@@ -74,13 +71,12 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  
+
   padding-top: 120px;
   position: relative;
   z-index: 1;
 }
 
-/* seção principal */
 article {
   background-color: var(--white);
   padding: 30px;
@@ -136,17 +132,17 @@ article {
   color: var(--gray);
 }
 
-.schools{
+.schools {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;              
+  gap: 40px;
   max-width: 800px;
   margin: auto;
 }
 
 .schools-intro {
-  margin-top: 20px; /* espaçamento entre seções */
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -167,7 +163,7 @@ article {
 }
 
 .school {
-  width: 350px;   
+  width: 350px;
   height: 350px;
   background-color: white;
   color: var(--gray);
@@ -205,7 +201,6 @@ article {
   padding: 10px;
 }
 
-/* seção de objetivos */
 .objectives .card {
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

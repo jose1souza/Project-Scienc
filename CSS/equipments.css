@@ -36,54 +36,54 @@
   transform: scale(1.05);
 }
 
-.main-equipment{
-    margin-top: 120px;
-    margin-bottom: 15px;
-    border: 2px solid var(--blue);
-    border-radius: 8px;
+.main-equipment {
+  margin-top: 120px;
+  margin-bottom: 15px;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
 }
 
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
 
 .equipment-info {
-    background: rgb(214, 237, 245);
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 1px 1px 10px rgb(211, 210, 210);
+  background: rgb(214, 237, 245);
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 1px 1px 10px rgb(211, 210, 210);
 }
 
 .equipment {
-    background: linear-gradient(to right, #eaf6ff, #f0f8ff);
-    display: flex;
-    gap: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .equipment-image {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
 }
 
 .equipment-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .equipment-title {
-    margin: 0 0 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .equipment-text {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }

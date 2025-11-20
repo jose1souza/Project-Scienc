@@ -1,10 +1,8 @@
-// NAV: muda cor ao rolar
 window.addEventListener("scroll", () => {
   const nav = document.querySelector(".nav-top");
   nav.classList.toggle("scrolled", window.scrollY > 250);
 });
 
-// ANIMAÇÃO: logo
 const logo = document.querySelector("#logotype-image");
 if (logo) {
   const logoObserver = new IntersectionObserver((entries) => {
@@ -18,7 +16,6 @@ if (logo) {
   logoObserver.observe(logo);
 }
 
-// ANIMAÇÃO: sobre o projeto
 const aboutSection = document.querySelector(".about-project");
 if (aboutSection) {
   const aboutObserver = new IntersectionObserver((entries) => {
@@ -32,7 +29,6 @@ if (aboutSection) {
   aboutObserver.observe(aboutSection);
 }
 
-// ANIMAÇÃO: cards
 const cards = document.querySelectorAll(".card");
 if (cards.length > 0) {
   const cardObserver = new IntersectionObserver((entries) => {
