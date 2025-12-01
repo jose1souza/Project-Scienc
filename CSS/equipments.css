@@ -57,6 +57,7 @@
 .equipment {
   background: linear-gradient(to right, #eaf6ff, #f0f8ff);
   display: flex;
+  margin: 15px;
   gap: 20px;
   border-radius: 8px;
   overflow: hidden;
