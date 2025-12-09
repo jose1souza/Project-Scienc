@@ -103,3 +103,13 @@ nav ul li a {
   transform: scale(1.1);
   background-color: var(--gray);
 }
+
+.footerDesenvolvido{
+  margin-top: 2%;
+}
+
+@media (min-width: 370px) and (max-width: 500px){
+    .titleLogo{
+      font-size: 16px;
+    }
+}

@@ -5,20 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/index.css">
   <link rel="stylesheet" href="CSS/spinner.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <title>Maker - Paraguaçu, Machado e Poço Fundo</title>
 </head>
 
 <body>
 
   <nav class="nav-top">
-    <div class="d-flex align-items-center gap-3">
+    <div class="menuTop">
       <a href="index.html">
         <img src="img/science-Logotype.png" alt="Logo do projeto" id="logotype-image" class="img-fluid"
           style="width: 80px;">
@@ -26,7 +23,7 @@
       <h1 class="titleLogo">+Ciência nas Escolas</h1>
     </div>
 
-    <ul class="nav justify-content-end gap-3">
+    <ul class="headMenu">
       <li class="nav-item">
         <a class="nav-link text-white" href="loading.html?next=index.html">Inicio</a>
       </li>
@@ -74,7 +71,7 @@
         </div>
       </section>
 
-      <section class="schools-intro container py-5">
+      <section class="objectives">
         <header class="mb-4 text-center">
           <h2 id="escolas" class="fw-bold text-primary">Escolas Participantes</h2>
           <p class="fs-5 text-dark">
@@ -110,57 +107,66 @@
         </a>
       </section>
 
-      <section class="objectives container py-5">
-        <header class="mb-4 text-center">
-          <h2 class="fw-bold text-primary">Objetivos do Projeto</h2>
-          <p class="text-muted">Conheça os principais focos do +Ciência nas Escolas</p>
-        </header>
-        <div class="row g-4">
-          <div class="col-md-6 col-sm-12">
-            <div class="card h-100 objective-card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-lightbulb me-2 text-primary"></i>Ensino Inovador</h5>
-                <p class="card-text">
-                  Fortalecer o ensino com práticas inovadoras como:
-                <ul>
-                  <li>- Arduino</li>
-                  <li>- Robótica</li>
-                  <li>- Impressão 3D</li>
-                </ul>
-                </p>
-              </div>
-            </div>
-          </div>
+      <section class="objectives">
+  <header>
+    <h2>Objetivos do Projeto</h2>
+    <p>Conheça os principais focos do +Ciência nas Escolas</p>
+  </header>
 
-          <div class="col-md-6 col-sm-12">
-            <div class="card h-100 objective-card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-bullhorn me-2 text-primary"></i>Divulgação</h5>
-                <p class="card-text">Divulgar ações e resultados das atividades realizadas nas escolas participantes.
-                </p>
-              </div>
-            </div>
-          </div>
+  <div class="row">
+    
+    <div class="objective-card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fas fa-lightbulb"></i> Ensino Inovador
+        </h5>
+        <p class="card-text">
+          Fortalecer o ensino com práticas inovadoras como:
+        </p>
+        <ul>
+          <li>- Arduino</li>
+          <li>- Robótica</li>
+          <li>- Impressão 3D</li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="col-md-6 col-sm-12">
-            <div class="card h-100 objective-card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-wifi me-2 text-primary"></i>Acesso à Educação Digital</h5>
-                <p class="card-text">Facilitar o acesso da comunidade escolar ao ensino de tecnologias.</p>
-              </div>
-            </div>
-          </div>
+    <div class="objective-card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fas fa-bullhorn"></i> Divulgação
+        </h5>
+        <p class="card-text">
+          Divulgar ações e resultados das atividades realizadas nas escolas participantes.
+        </p>
+      </div>
+    </div>
 
-          <div class="col-md-6 col-sm-12">
-            <div class="card h-100 objective-card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-users me-2 text-primary"></i>Formação</h5>
-                <p class="card-text">Estimular o público envolvido com interação entre tecnologia e ciência.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="objective-card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fas fa-wifi"></i> Acesso à Educação Digital
+        </h5>
+        <p class="card-text">
+          Facilitar o acesso da comunidade escolar ao ensino de tecnologias.
+        </p>
+      </div>
+    </div>
+
+    <div class="objective-card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fas fa-users"></i> Formação
+        </h5>
+        <p class="card-text">
+          Estimular o público envolvido com interação entre tecnologia e ciência.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     </article>
   </main>
 
@@ -204,7 +210,7 @@
         </div>
       </section>
 
-      <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.05);">
+      <div class="footerDesenvolvido" style="background-color: rgba(255, 255, 255, 0.05);">
         © 2025 Desenvolvido por <strong>Jose Carlos Souza</strong> e <strong>Lucas Silva da Rosa.</strong>
       </div>
     </div>
