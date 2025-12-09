@@ -91,7 +91,7 @@
   color: #555;
 }
 
-@media (min-width: 370px) and (max-width: 500px){
+@media (min-width: 370px) and (max-width: 780px){
   .equipment-info {
     display: grid;
     grid-template-columns: 1fr;

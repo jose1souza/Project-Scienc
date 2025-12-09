@@ -430,3 +430,133 @@ article {
 }
 
 }
+
+@media (min-width: 501px) and (max-width: 780px){
+  .nav-top.scrolled {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 2%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-top.scrolled .nav-link {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+  }
+
+  .nav-top .nav-link {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+  }
+
+  .nav-top h1{
+    padding-left: 11.5px;
+  }
+
+  .menuTop{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    padding-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  .menuTop h1{
+    margin-top: 4%;
+  }
+
+  .headMenu{
+    display: grid;
+    grid-template-columns: 60px 80px 125px 70px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  
+  .objectives {
+    padding: 2rem 1rem;
+  }
+
+  .objectives header h2 {
+    font-size: 22px;
+  }
+
+  .objectives header p {
+    font-size: 14px;
+  }
+
+  .objectives .row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .objective-card {
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .objective-card .card-title {
+    font-size: 18px;
+    gap: .4rem;
+  }
+
+  .objective-card .card-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .objective-card ul li {
+    font-size: 14px;
+  }
+
+  .schools{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+.school {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: var(--gray);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.school p{
+  font-size: 15px;
+  text-align: center;
+}
+
+.about-project {
+  background: linear-gradient(to right, #eaf6ff, #f0f8ff);
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
+  padding: 20px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+}
