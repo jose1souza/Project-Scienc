@@ -83,7 +83,7 @@
   padding-bottom: 2%;
 }
 
-@media (min-width: 370px) and (max-width: 500px){
+@media (max-width: 780px){
   .nav-top{
     display: grid;
     grid-template-columns: 1fr;

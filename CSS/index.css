@@ -301,7 +301,7 @@ article {
   margin-bottom: .3rem;
 }
 
-@media (min-width: 370px) and (max-width: 500px){
+@media (max-width: 780px){
   .nav-top.scrolled {
     display: grid;
     grid-template-columns: 1fr;
