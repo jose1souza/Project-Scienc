@@ -4,7 +4,7 @@ main{
 
 main h2{
     text-align: center;
-    color: blue;
+    color: rgb(0, 0, 160);
     font-weight: bold;
 }
 
@@ -20,7 +20,7 @@ main h2{
 
 .content h3{
     text-align: center;
-    color: blue;
+    color: rgb(0, 0, 160);
     margin-bottom: 1%;
     font-weight: bold;
 }

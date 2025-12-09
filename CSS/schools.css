@@ -160,6 +160,17 @@ body {
   text-decoration: underline;
 }
 
+.main-school{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-school img{
+  display: block;
+  margin: auto 0;
+}
+
 @media (max-width: 768px) {
 
   .activity,
