@@ -362,10 +362,6 @@ article {
     margin-bottom: 3%;
   }
 
-  .menuTop h1{
-    margin-top: 4%;
-  }
-
   .headMenu{
     display: grid;
     grid-template-columns: 35px 55px 90px 50px;
