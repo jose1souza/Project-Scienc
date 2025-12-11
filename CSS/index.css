@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.img-fluid{
+  width: 50%;
+}
+
 .nav-top {
   position: fixed;
   top: 0;
@@ -351,7 +355,7 @@ article {
 
   .headMenu{
     display: grid;
-    grid-template-columns: 35px 55px 105px 50px;
+    grid-template-columns: 35px 55px 90px 50px;
     grid-template-rows: 1fr;
     justify-content: left;
   }
