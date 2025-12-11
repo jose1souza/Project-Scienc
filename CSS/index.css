@@ -48,7 +48,7 @@
 }
 
 .nav-top img {
-  max-width: 80px;
+  max-width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -306,6 +306,11 @@ article {
 }
 
 @media (max-width: 780px){
+  .nav-top img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+  } 
   .nav-top.scrolled {
     display: grid;
     grid-template-columns: 1fr;
