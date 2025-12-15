@@ -8,18 +8,18 @@ if (target) {
     console.log("Destino encontrado:", target);
 
     if (!sessionStorage.getItem(hasRedirectedKey)) {
-        sessionStorage.setItem(hasRedirectedKey, 'true'); // Marca a sessão
+        sessionStorage.setItem(hasRedirectedKey, 'true'); 
         console.log("Redirecionando para:", target);
 
         history.replaceState({ redirect: target }, document.title, window.location.href);
 
         setTimeout(() => {
-            window.location.replace(target); // Usa replace() para evitar que o "Voltar" volte para a página de loading.
+            window.location.replace(target); 
         }, 500);
 
     } else {
         console.log("Redirecionamento já processado nesta sessão. Não redirecionando novamente.");
-        sessionStorage.removeItem(hasRedirectedKey); // Opcional: Limpa a marcação para permitir novo fluxo.
+        sessionStorage.removeItem(hasRedirectedKey); 
     }
 
 } else {
@@ -40,7 +40,6 @@ window.addEventListener("popstate", (event) => {
         console.log("Redirecionando de volta para o destino original:", target);
         window.location.replace(target);
     } else {
-        // Se não há destino original, e ele está voltando, leva para a página inicial
         console.log("Nenhum destino. Redirecionando para a raiz /");
         window.location.href = "/";
     }
@@ -48,4 +47,5 @@ window.addEventListener("popstate", (event) => {
 
 window.addEventListener("beforeunload", () => {
     sessionStorage.removeItem(hasRedirectedKey);
+
 });
