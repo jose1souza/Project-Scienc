@@ -1,61 +1,81 @@
+<div align="center">
+
+![Capa do projeto +Ciência nas Escolas](img/background.png)
+
 # +Ciência nas Escolas
 
-Site institucional do projeto **+Ciência nas Escolas**, desenvolvido para apresentar as escolas participantes, os equipamentos dos laboratórios maker e os materiais de capacitação.
+### Ciência, tecnologia e inovação conectando escolas e comunidades.
 
-## O que o site oferece
+[![Aplicação online](https://img.shields.io/badge/Aplicação-online-168aad?style=for-the-badge&logo=vercel&logoColor=white)](https://project-scienc.vercel.app/)
+[![Status](https://img.shields.io/badge/status-publicado-2a9d8f?style=for-the-badge)](https://project-scienc.vercel.app/)
 
-- Página inicial com apresentação do projeto e escolas participantes.
-- Perfil de cada escola, com atividades carregadas pelo Prismic e mapa de localização.
-- Catálogo de equipamentos disponíveis nos laboratórios.
-- Acesso ao conteúdo de treinamento no Google Classroom.
-- Layout responsivo para computadores, tablets e celulares.
+**Acesse agora:** [project-scienc.vercel.app](https://project-scienc.vercel.app/)
 
-## Como executar
+</div>
 
-O projeto não possui etapa de build. Para uma visualização rápida, abra `index.html` no navegador.
+## 🔬 Sobre o projeto
 
-Para testar o comportamento completo, principalmente os módulos JavaScript das páginas de escolas, prefira um servidor local:
+O **+Ciência nas Escolas** apresenta as ações do projeto que aproxima estudantes da ciência e da tecnologia por meio de laboratórios maker, atividades práticas e formação. O site reúne informações das escolas participantes e dos equipamentos disponíveis, além de direcionar professores e estudantes aos materiais de capacitação.
 
-### VS Code
+## 🗂️ O que você encontra
 
-1. Instale a extensão **Live Server**.
-2. Abra `index.html` no Explorer.
-3. Clique com o botão direito e escolha **Open with Live Server**.
+- **Projeto:** apresentação e objetivos da iniciativa.
+- **Escolas participantes:** páginas com atividades, informações e localização.
+- **Equipamentos:** catálogo dos recursos dos laboratórios maker.
+- **Treinamento:** acesso aos materiais de apoio no Google Classroom.
+- **Experiência responsiva:** navegação adaptada para computador, tablet e celular.
 
-### Servidor local alternativo
+## 🚀 Aplicação online
 
-Com Python instalado, execute na pasta do projeto:
+O site está publicado na Vercel e pode ser acessado pelo endereço:
+
+### [🌐 Abrir +Ciência nas Escolas](https://project-scienc.vercel.app/)
+
+## 🛠️ Tecnologias
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Prismic](https://img.shields.io/badge/Prismic-5163BA?style=for-the-badge&logo=prismic&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+## 💻 Executar localmente
+
+O projeto é estático e não exige etapa de build. Para testar todas as páginas, incluindo os módulos JavaScript das escolas, use um servidor local.
+
+Com a extensão **Live Server** no VS Code, abra `index.html` e selecione **Open with Live Server**.
+
+Ou, com Python instalado, execute na pasta do projeto:
 
 ```bash
 python -m http.server 8000
 ```
 
-Depois acesse `http://localhost:8000`.
+Abra `http://localhost:8000` no navegador. A conexão com a internet é necessária para carregar atividades do Prismic, ícones externos e conteúdo hospedado no Google Classroom.
 
-## Estrutura
+## 📁 Estrutura do projeto
 
 ```text
 .
 ├── index.html              # Página inicial
-├── loading.html            # Tela de transição entre páginas
+├── loading.html            # Tela de transição
 ├── HTML/                   # Páginas internas
-├── CSS/                   # Estilos globais e específicos
-├── JS/                    # Scripts da interface e integração com Prismic
-└── img/                   # Logos, fotos e imagens dos equipamentos
+├── CSS/                    # Estilos globais e por página
+├── JS/                     # Scripts e integração com Prismic
+└── img/                    # Imagens, logos e fotografias
 ```
 
-## Conteúdo das escolas
+## 👥 Contribuidores
 
-As páginas de escolas utilizam a API do Prismic por meio de módulos em `JS/prismic/`. Para atualizar as atividades, edite o conteúdo nos repositórios correspondentes do Prismic. É necessário ter conexão com a internet para carregar esses dados.
+- [José Carlos Souza (@jose1souza)](https://github.com/jose1souza)
+- [Lucas Silva da Rosa (@lucasa17)](https://github.com/lucasa17)
 
-## Manutenção
+---
 
-- Preserve os caminhos relativos ao mover páginas dentro de `HTML/`.
-- Use imagens com `alt` descritivo.
-- Teste a home em pelo menos 390px e 1440px de largura antes de publicar.
-- Mantenha os estilos compartilhados em `CSS/style.css` e `CSS/navAndFooter.css`; use folhas específicas apenas para diferenças reais.
-- Evite adicionar dependências quando a funcionalidade puder ser resolvida com HTML, CSS e JavaScript nativos.
+<div align="center">
 
-## Tecnologias
+Feito para aproximar a ciência das escolas e da comunidade.
 
-HTML5, CSS3, JavaScript ES Modules, Font Awesome e Prismic API.
+[Visite a aplicação](https://project-scienc.vercel.app/)
+
+</div>
